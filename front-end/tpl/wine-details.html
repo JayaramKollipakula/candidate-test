@@ -1,0 +1,31 @@
+
+<--! HTML for rug details page--!>
+
+<div class="form-left-col">
+    <label>Id:</label>
+    <input name="id" type="text" value="{{ rug.id }}" disabled />
+
+    <label>Name:</label>
+    <input type="text" name="rug.name" value="{{ rug.name }}" required/>
+
+    <label>Type:</label>
+    <input type="text" name="rug.type" value="{{ rug.type }}"/>
+
+    <label>Country:</label>
+    <input type="text" name="rug.country" value="{{ rug.country }}"/>
+
+    <label>Region:</label>
+    <input type="text" name="rug.region" value="{{ rug.region }}"/>
+
+    <label>Year:</label>
+    <input type="text" name="rug.year" value="{{ rug.year }}"/>
+
+    <button class="save" ng:click="saverug()">Save</button>
+    <button class="delete" ng:click="deleterug()">Delete</button>
+</div>
+
+<div class="form-right-col">
+    <img width="250" height="300" src="pics/{{ rug.picture }}" onerror="this.src='pics/IVORY-GOLD-FERAGHAN-COASTERRUG.jpg'"/>
+    <label>Notes:</label>
+    <textarea name="rug.description">{{ rug.description }}</textarea>
+</div>

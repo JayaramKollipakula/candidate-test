@@ -1,0 +1,7 @@
+<!-- All rugs will display !-->
+
+<ul ng:controller="rugListCtrl">
+    <li ng:repeat="rug in rugs">
+        <a href='#/rugs/{{ rug.id }}'>{{ rug.name }}</a>
+    </li>
+</ul>

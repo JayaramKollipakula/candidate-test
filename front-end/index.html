@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:ng="http://angularjs.org">
+<head>
+<title>Turco Persian Rug CO</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body ng:controller="RouteCtrl">
+
+<div id="header">
+    Turco Persian Rug CO
+    <button ng:click="addrug()">New Rug</button>
+</div>
+
+<!-- Here We will display all the rugs in our company !-->
+
+<div id="sidebar">
+    <ng:include src="'tpl/rug-list.html'"></ng:include>
+</div>
+
+<div id="content">
+    <ng:view></ng:view>
+</div>
+
+<script src="lib/angular-0.9.19.min.js" ng:autobind></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+
+</body>
+
+</html>
