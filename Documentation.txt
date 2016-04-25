@@ -1,0 +1,37 @@
+Following is the basic application structure of the project.
+
+- app
+        ----- models/
+        ---------- nerd.js <!-- the nerd model to handle CRUD -->
+    ----- routes.js
+    - config
+        ----- db.js 
+    - node_modules <!-- created by npm install -->
+    - public <!-- all frontend and angular stuff -->
+    ----- css
+    ----- js
+    ---------- controllers <!-- angular controllers -->
+    ---------- services <!-- angular services -->
+    ---------- app.js <!-- angular application -->
+    ---------- appRoutes.js <!-- angular routes -->
+    ----- img
+    ----- libs <!-- created by bower install -->
+    ----- views 
+    ---------- home.html
+    ---------- nerd.html
+    ---------- geek.html
+    ----- index.html
+    - .bowerrc <!-- tells bower where to put files (public/libs) -->
+    - bower.json <!-- tells bower which files we need -->
+    - package.json <!-- tells npm which packages we need -->
+    - server.js <!-- set up our node application -->
+
+1.	First I created package.json file, then our application will know that we want to use Express and Mongoose.
+2.	I installed all modules which are required to the application like mongoose, express etc…
+3.	Created a DB config file where connection will establish to MongoDB.
+4.	Then index.html, this file we have to place in ‘public’ folder.
+5.	Then angularJS for front-end work will require a few things:
+•	Files and libraries brought in by Bower
+•	Angular application structure (controllers, services).
+In this app we can create a profile for desired rug (add a rug), view details of rug and also can delete rug.
+App is working on local host but there are some issues when running in nodeJS. 

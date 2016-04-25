@@ -9,6 +9,7 @@ var Nerd = require('./models/nerd');
         // sample api route
         app.get('/api/nerds', function(req, res) {
             // use mongoose to get all nerds in the database
+
             Nerd.find(function(err, nerds) {
 
                 // if there is an error retrieving, send the error. 
